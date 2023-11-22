@@ -1,0 +1,155 @@
+.card-class{
+    position: relative !important;
+    overflow: hidden;
+}
+
+.card-class .card-overlay{
+    position: absolute !important;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 20px 0 0 0;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 10px;
+    -webkit-transform: translateY(50%);
+    -moz-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    -o-transform: translateY(50%);
+    transition: transform .2s linear;
+    -webkit-transition: transform .2s linear;
+    -moz-transition: transform .2s linear;
+    -ms-transition: transform .2s linear;
+    -o-transition: transform .2s linear;
+    -webkit-border-radius: 20px 0 0 0;
+    -moz-border-radius: 20px 0 0 0;
+    -ms-border-radius: 20px 0 0 0;
+    -o-border-radius: 20px 0 0 0;
+}
+
+.card-class .card-overlay::after{
+    content: '';
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    bottom: 98%;
+    right: 0;
+    clip-path: polygon(100% 0, 0 100%, 100% 100%);
+    background: #fff;
+}
+
+.card-class:hover .card-overlay{
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+}
+
+.card-class .info-class{
+    display: flex;
+    column-gap: 30px;
+    align-items: center;
+}
+
+.card-class .class-instructor__avatar{
+    width: 60px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.card-class .class-instructor__avatar img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.card-class__detail::after{
+    content: '';
+    background: rgb(0 0 0 / 28%);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.card-class__name{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    z-index: 100;
+    text-transform: uppercase;
+    font-size: 2rem;
+    padding: 30px;
+}
+
+.card-class__instructor{
+    column-gap: 30px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    padding: 30px;
+}
+
+.card-class__instructor.avatar{
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.card-class__instructor.avatar img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.class-instructor__info.name{
+    color: #fff;
+}
+
+.card-class__detail{
+    overflow: hidden;
+}
+
+.card-class__detail>img{
+    transform: scale(1);
+    transition: transform .2s linear;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    -webkit-transition: transform .2s linear;
+    -moz-transition: transform .2s linear;
+    -ms-transition: transform .2s linear;
+    -o-transition: transform .2s linear;
+}
+
+.card-class__detail:hover>img{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.plyr--video{
+    width: 100%;
+    height: 100%;
+}
